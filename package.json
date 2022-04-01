@@ -1,0 +1,25 @@
+{
+  "name": "certgen-cli",
+  "version": "1.0.0",
+  "description": "Generate letsencrypt certificates for Haproxy",
+  "main": "bin/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node .",
+    "generate": "./bin/generate.sh",
+    "renew": "./bin/renew.sh"
+  },
+  "author": "Sahil Patel",
+  "license": "MIT",
+  "bin": {
+    "certgen-cli": "./bin/index.js",
+    "generate": "./bin/generate.sh",
+    "renew": "./bin/renew.sh"
+  },
+  "dependencies": {
+    "chalk": "2.4",
+    "child_process": "^1.0.2",
+    "inquirer": "^8.2.2",
+    "is-elevated": "^4.0.0"
+  }
+}
